@@ -109,16 +109,16 @@ div#page{
 /*字体*/
 @font-face{
     font-family:Candyhome;
-    src:url(https://cdn.jsdelivr.net/gh/Odfense/Hexo/fonts/Candyhome.ttf);
+    src:url(https://cdn.jsdelivr.net/gh/Odfense/Hexo@1.0.3/fonts/Candyhome.ttf);
     font-display:swap;
 }
 @font-face{
     font-family:ZhuZiAYuanJWD;
-    src:url(https://cdn.jsdelivr.net/gh/Odfense/Hexo/fonts/ZhuZiAYuanJWD.ttf);
+    src:url(https://cdn.jsdelivr.net/gh/Odfense/Hexo@1.0.3/fonts/ZhuZiAYuanJWD.ttf);
     font-display:swap;
 }@font-face{
     font-family:Poem;
-    src:url(https://cdn.jsdelivr.net/gh/Odfense/Hexo/fonts/Poem.ttf);
+    src:url(https://cdn.jsdelivr.net/gh/Odfense/Hexo@1.0.3/fonts/Poem.ttf);
     font-display:swap;
 }
 /*主页副标题字体修改*/
