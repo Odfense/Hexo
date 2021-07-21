@@ -36,7 +36,7 @@
     background: transparent!important;
 }
 
-#footer:before{
+#footer::before{
     background: transparent!important;
 }
 
@@ -94,16 +94,60 @@ div#page{
     background: rgba(0, 0, 0, 0.5)!important;
     color: #ffffff;
 }
-
-
-
-
-
+/*首页铃铛*/
+.fa-angle-down::before {
+    content: "\f0f3";
+}
 /*aplayer美化*/
 .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body{
     left:-66px!important
 }
 .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover{
     left:0!important
+}
+
+/*字体*/
+@font-face{
+    font-family:Candyhome;
+    src:url(https://cdn.jsdelivr.net/gh/Odfense/Hexo/fonts/Candyhome.ttf);
+    font-display:swap;
+}
+@font-face{
+    font-family:ZhuZiAYuanJWD;
+    src:url(https://cdn.jsdelivr.net/gh/Odfense/Hexo/fonts/ZhuZiAYuanJWD.ttf);
+    font-display:swap;
+}@font-face{
+    font-family:Poem;
+    src:url(https://cdn.jsdelivr.net/gh/Odfense/Hexo/fonts/Poem.ttf);
+    font-display:swap;
+}
+/*主页副标题字体修改*/
+h1#site-title{
+    font-family:Candyhome;
+    font-size:3em!important
+}
+/*主题颜色修改*/
+:root {
+    --btn-bg: #9370db;
+}
+#nav .site-page:not(.child):after{
+    background-color: #9370db;
+}
+/*去掉follow按钮*/
+#aside-content .card-info #card-info-btn{
+    display: none;
+}
+/*图标颜色设置*/
+.fa-qq{
+    color: #10a4ff;
+}
+.fa-weixin{
+    color: #00bf03;
+}
+.fa-rss{
+    color: #d68650;
+}
+.fa-envelope{
+    color: #10a4ff;
 }
 
