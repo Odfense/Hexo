@@ -98,6 +98,11 @@ div#page{
 .fa-angle-down::before {
     content: "\f0f3";
 }
+
+
+
+
+
 /*aplayer美化*/
 .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body{
     left:-66px!important
@@ -109,16 +114,16 @@ div#page{
 /*字体*/
 @font-face{
     font-family:Candyhome;
-    src:url(https://cdn.jsdelivr.net/gh/Odfense/Hexo@1.0.3/fonts/Candyhome.ttf);
+    src:url(https://cdn.jsdelivr.net/gh/Odfense/Hexo/fonts/Candyhome.ttf);
     font-display:swap;
 }
 @font-face{
     font-family:ZhuZiAYuanJWD;
-    src:url(https://cdn.jsdelivr.net/gh/Odfense/Hexo@1.0.3/fonts/ZhuZiAYuanJWD.ttf);
+    src:url(https://cdn.jsdelivr.net/gh/Odfense/Hexo/fonts/ZhuZiAYuanJWD.ttf);
     font-display:swap;
 }@font-face{
     font-family:Poem;
-    src:url(https://cdn.jsdelivr.net/gh/Odfense/Hexo@1.0.3/fonts/Poem.ttf);
+    src:url(https://cdn.jsdelivr.net/gh/Odfense/Hexo/fonts/Poem.ttf);
     font-display:swap;
 }
 /*主页副标题字体修改*/
@@ -133,10 +138,6 @@ h1#site-title{
 #nav .site-page:not(.child):after{
     background-color: #9370db;
 }
-/*去掉follow按钮*/
-#aside-content .card-info #card-info-btn{
-    display: none;
-}
 /*图标颜色设置*/
 .fa-qq{
     color: #10a4ff;
@@ -148,6 +149,76 @@ h1#site-title{
     color: #d68650;
 }
 .fa-envelope{
-    color: #10a4ff;
+    color: #db1f16;
+}
+/*页脚跳动的心*/
+#heartbeat {
+    color: red;
+    animation: iconAnimate 1.33s ease-in-out infinite;
+}
+/*滚动条*/
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
 }
 
+::-webkit-scrollbar-thumb {
+    background-color: #9370db;
+    background-image: -webkit-linear-gradient( 45deg, rgba(255, 255, 255, 0.4) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.4) 75%, transparent 75%, transparent);
+    border-radius: 2em;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: transparent;
+}
+
+::-moz-selection {
+    color: #fff;
+    background-color: #9370db;
+}
+
+/*!*鼠标样式*!*/
+/*!* 全局默认鼠标指针 *!*/
+/*body,*/
+/*html{*/
+/*    cursor: url('https://cdn.jsdelivr.net/npm/akilar-candyassets/cur/arrow.cur'),auto !important;*/
+/*}*/
+/*!* 悬停图片时的鼠标指针 *!*/
+/*img{*/
+/*    cursor: url('https://cdn.jsdelivr.net/npm/akilar-candyassets/cur/btn.cur'),auto !important;*/
+/*}*/
+/*!* 选择链接标签时的鼠标指针 *!*/
+/*a:hover{*/
+/*    cursor: url('https://cdn.jsdelivr.net/npm/akilar-candyassets/cur/link.cur'),auto;*/
+/*}*/
+/*!* 选中输入框时的鼠标指针 *!*/
+/*input:hover{*/
+/*    cursor: url('https://cdn.jsdelivr.net/npm/akilar-candyassets/cur/input.cur'),auto;*/
+/*}*/
+/*!* 悬停按钮时的鼠标指针 *!*/
+/*button:hover{*/
+/*    cursor: url('https://cdn.jsdelivr.net/npm/akilar-candyassets/cur/btn.cur'),auto;*/
+/*}*/
+/*!* 悬停列表标签时的鼠标指针 *!*/
+/*i:hover{*/
+/*    cursor: url('https://cdn.jsdelivr.net/npm/akilar-candyassets/cur/link.cur'),auto;*/
+/*}*/
+/*!* 悬停页脚链接标签（例如页脚徽标）时的鼠标指针 *!*/
+/*#footer-wrap a:hover{*/
+/*    cursor: url('https://cdn.jsdelivr.net/npm/akilar-candyassets/cur/hf.cur'),auto;*/
+/*}*/
+/*!* 悬停页码时的鼠标指针 *!*/
+/*#pagination .page-number:hover{*/
+/*    cursor: url('https://cdn.jsdelivr.net/npm/akilar-candyassets/cur/i.cur'),auto;*/
+/*}*/
+/*!* 悬停菜单栏时的鼠标指针 *!*/
+/*#nav .site-page:hover{*/
+/*    cursor: url('https://cdn.jsdelivr.net/npm/akilar-candyassets/cur/hf.cur'),auto;*/
+/*}*/
+
+
+/*页脚魔改*/
+/*#footer-wrap{*/
+/*    height: 250px;*/
+/*}*/
