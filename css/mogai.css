@@ -238,15 +238,24 @@ h1#site-title{
 
 }
 .my-skills .row{
-    height: 180px;
-    margin: 0 auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0px;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 .my-skills .row .col{
     width: 445px;
-    height: 60px;
-    padding: 0 0.75em;
     float: left;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 .75rem;
+    min-height: 1px;
 }
+
 .skillbar{
     position: relative;
     display: block;
@@ -287,4 +296,62 @@ h1#site-title{
     line-height: 30px;
     color: #ffffff;
     color: rgba(0, 0, 0, 0.5);
+}
+
+@media only screen and (max-width: 1009px){
+    .row .col.s12 {
+        width: 100%;
+        margin-left: auto;
+        left: auto;
+        right: auto;
+    }
+
+}
+.row .col.s12 {
+    /*width: 100%;*/
+    margin-left: auto;
+    left: auto;
+    right: auto;
+}
+
+/*my-infor美化*/
+.my-infor{
+    height: 200px;
+    margin-bottom: 40px;
+}
+.ff1{
+    width: auto;
+    height: 200px;
+}
+.my-infor .card-info-data {
+    background-color: #00bf03;
+    float: left;
+    margin-right: 40px;
+    /*-webkit-box-sizing: border-box;*/
+    /*box-sizing: border-box;*/
+    /*padding: 0 .75rem;*/
+    /*min-height: 1px;*/
+}
+.my-infor .mine{
+    float: left;
+    background-color: red;
+    /*-webkit-box-sizing: border-box;*/
+    /*box-sizing: border-box;*/
+    /*padding: 0 .75rem;*/
+    /*min-height: 1px;*/
+}
+.my-infor .social{
+    float: right;
+    background-color: blue;
+    /*-webkit-box-sizing: border-box;*/
+    /*box-sizing: border-box;*/
+    /*padding: 0 .75rem;*/
+    /*min-height: 1px;*/
+}
+
+.my-infor .card-info-data .card-info-data-item a .headline {
+    float: left;
+}
+.my-infor .card-info-data .card-info-data-item a .length-num {
+    float: left;
 }
